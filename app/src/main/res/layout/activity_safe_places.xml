@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SafePlaces"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:padding="25dp"
+        android:text="Be Safe"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:id="@+id/findLocationForSafePlaces"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/pink"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Find Location" />-->
+
+    <LinearLayout
+        android:id="@+id/safePlacesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Safe Places Near you"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NameOfSafePlace1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Name of Place"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/DistanceToSafePlace1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="2.5km"
+                        android:textColor="#6b6a68"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/AddressSafePlace1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="3, Lal Bagh Nagar, Chennai\nAddress Line 2"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SafePlaceDirection1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:src="@drawable/directions"
+                        android:text="Directions emoji"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="#7d7c78" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NameOfSafePlace2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Name of Place"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/DistanceToSafePlace2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="2.5km"
+                        android:textColor="#6b6a68"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/AddressSafePlace2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="3, Lal Bagh Nagar, Chennai\nAddress Line 2"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SafePlaceDirection2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:src="@drawable/directions"
+                        android:text="Directions emoji"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="#7d7c78" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NameOfSafePlace3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Name of Place"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/DistanceToSafePlace3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="2.5km"
+                        android:textColor="#6b6a68"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/AddressSafePlace3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="3, Lal Bagh Nagar, Chennai\nAddress Line 2"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SafePlaceDirection3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:src="@drawable/directions"
+                        android:text="Directions emoji"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="#7d7c78" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NameOfSafePlace4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Name of Place"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/DistanceToSafePlace4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="2.5km"
+                        android:textColor="#6b6a68"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/AddressSafePlace4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="3, Lal Bagh Nagar, Chennai\nAddress Line 2"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SafePlaceDirection4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:src="@drawable/directions"
+                        android:text="Directions emoji"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="#7d7c78" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NameOfSafePlace5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Name of Place"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/DistanceToSafePlace5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="2.5km"
+                        android:textColor="#6b6a68"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/AddressSafePlace5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="3, Lal Bagh Nagar, Chennai\nAddress Line 2"
+                        android:textSize="14dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SafePlaceDirection5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:src="@drawable/directions"
+                        android:text="Directions emoji"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#7d7c78" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/NavBar"
+        android:name="com.example.besafeapp.NavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"></fragment>
+
+</LinearLayout>

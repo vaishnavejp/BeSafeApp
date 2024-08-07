@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavBar"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:text="Be Safe"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Help"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/place"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:drawableStart="@drawable/homepage_grey_buttons"
+                android:text="Find Safe Places Near You"
+                android:textAllCaps="false" />
+
+            <android.widget.Button
+                android:id="@+id/lHelplines"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:drawableStart="@drawable/homepage_grey_buttons"
+                android:text="Contact Local Helplines"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sos"
+            android:layout_width="253dp"
+            android:layout_height="253dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/sos_red"
+            android:text="SOS"
+            android:textSize="60dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/yellow"
+                android:text="    Send SMS     "
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:text="    Alarm On     "
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/NavBar"
+        android:name="com.example.besafeapp.NavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"></fragment>
+
+</LinearLayout>

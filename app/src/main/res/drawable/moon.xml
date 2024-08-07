@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/moon.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/yellow"></solid>
+        </shape>
+    </item>
+    <item android:left="160dp" android:bottom="100dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white"></solid>
+        </shape>
+    </item>
+</layer-list>
